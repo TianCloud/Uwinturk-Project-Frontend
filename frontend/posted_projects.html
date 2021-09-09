@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Uwin Turk | Client Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+  	body {
+    background-image: url('brain_strom.png');
+    background-size: cover;
+  }
+    .img_long img {
+    width: 100%;
+    height: 100%;
+  }
+
+    .btn {
+      border: #667ac2;
+      background-color: #667ac2;
+    }
+
+    .page-link {
+      color: white;
+      background-color: #343a40;
+    }
+
+    .list-group-item:hover {
+      background-color: #d1d1e0;
+    }
+  </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  
+	  <a class="navbar-brand" href="home_page.html">
+	    <img src="./img/rsz_uwin_logo1.jpg" alt="">
+	  </a>
+
+	  <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="collapse_target">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href="home_page.html">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Resource</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="about_page.html">About</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+	          More
+	        </a>
+	        <div class="dropdown-menu">
+	          <a class="dropdown-item" href="help_page.html">Help</a>
+	          <a class="dropdown-item" href="#">Agreement</a>
+	          <a class="dropdown-item" href="#">Appeal</a>
+	        </div>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+	          Akcloud
+	        </a>
+	        <div class="dropdown-menu">
+	          <a class="dropdown-item" href="#">Log Out</a>
+	        </div>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+<br>
+<br>
+<br>
+	<div class="col-sm-8 offset-sm-2" style="background-color: white">
+		<br>
+		<div class="col-sm-10 offset-sm-1">
+			<div id="project-under-review" class="container tab-pane active">
+	     	<div class="list-group" id="project">
+	     		<div><span><font size="5"><strong>Searching Algorithm Comparision</strong></font></span>
+	     			<a href="clientdash.html">
+	            		<button class="btn btn-info btn-sm back float-right" style="font-size:20px">
+	            			Back <i class="material-icons" style="font-size:18px">exit_to_app</i>
+	            		</button>
+          			</a>
+	     		</div>
+	     		<div><span">ID: 102</span></div>
+	        	<div><span>Due: 12/30/2019</span></div>
+	        	<hr style="filter: progid:dximagetransform.microsoft.glow(color="#987cb9,strength=10) width="100%" color="#987cb9" size=1>
+	        <!-- <template id="processing-projects"> -->
+	        	<a href="#" class="list-group-item list-group-item-action" data-toggle="tooltip" data-placement="left" title="Click to view details!"> <!-- row one -->
+	        	<div><span><strong>Winston</strong></span><span style="float:right">Rank: 8.0 </span></div>
+	        	<div><span style="float:right">Rating: 90% </span></div></a> <!-- row one end -->
+	        <!-- </template> -->
+	        	<a href="#" class="list-group-item list-group-item-action" data-toggle="tooltip" data-placement="left" title="Click to view details!">
+	        	<div><span><strong>Kelvin</strong></span><span style="float:right">Rank: 9.0 </span></div>
+	          <div><span style="float:right">Rating: 100% </span></div></a>
+	        	<a href="#" class="list-group-item list-group-item-action" data-toggle="tooltip" data-placement="left" title="Click to view details!">
+	        	<div><span><strong>Rishi</strong></span><span style="float:right">Rank: 9.0 </span></div>
+	          <div><span style="float:right">Rating: 90%</span></div></a>
+	      </div>
+	      <br>
+	      <a href="#" class="btn btn-info" role="button">Previous</a>
+	      <a href="#" class="btn btn-info float-right" role="button">Next</a>
+	    </div>
+	    <br>
+	    <br>
+		</div>
+	</div>
+
+<script>
+	$(document).ready(function(){
+    	$('[data-toggle="tooltip"]').tooltip();
+  	});
+</script>
+</body>
+</html>
